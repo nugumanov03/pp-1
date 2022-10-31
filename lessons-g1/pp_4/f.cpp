@@ -21,10 +21,13 @@ int main(){
     //         break;
     //     }
     // }
-int k = 0;
+    int k = 0;
     for(int i = 0; i < s.size();i++){
         if(s[i] == s2[k]){
             k++;
+            // i =0 k = 0
+            // i =1 k = 1
+            //  i =2 -> k = 0
         }else{
             i-=k;
             k = 0;
@@ -37,8 +40,8 @@ int k = 0;
     }
 
     if(flag){
-        cout << "YES";
-    }else cout << "NO";
+        cout << "yes";
+    }else cout << "no";
 
 
 
