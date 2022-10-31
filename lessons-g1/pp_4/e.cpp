@@ -10,20 +10,16 @@ int main(){
     for(int i = 0;i < 128;i++){
         was[i] = 0;
     }
-    int nums[s.size()];
-    // for(int i = 0; i < s.size();i++){
-    //     nums[i] = 
-    // }
     for(int i = 0;i < s.size() ; i++){
         int num = (int)s[i]; 
         // cout << s[i];
         was[num]++;
     }
     for(int i = 0; i < 128;i++){
-        if(was[i] == 2){
-            cout << (char)i;
-        }
-        // cout << was[i] << " ";
+        // if(was[i] == 2){
+        //     cout << (char)i;
+        // }
+        cout << was[i] << " ";
     }
 
 
