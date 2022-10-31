@@ -3,7 +3,7 @@
 
 using namespace std;
 
-int main(){
+int main(){  
     int n;
     cin >> n;
     int a[n];
@@ -23,16 +23,18 @@ int main(){
     }
     // cout << cnt << "\n";
     // cnt is count of unikalnih elemtov
-    int unikal[cnt][2];
-    for(int i = 0; i < cnt ; i++){
-        unikal[i][1] = 0;
-    }
+    int unikal[cnt];
+    int shetchiki[cnt];
     int k = 0; // k - is index of unikal array
     for(int i = 0;i <n+1 ;i++){
         if(a[i] != a[i+1]){
-            unikal[k][0] = a[i];
+            unikal[k] = a[i];
             k++;
         }
+    }
+
+    for(int i = 0; i < cnt ; i++){
+        shetchiki[i] = 0;
     }
     // unikal elemtns array ;; 
     // for(int i = 0;i < cnt;i++){
@@ -40,22 +42,22 @@ int main(){
     // }
     for(int i = 0; i < n;i++){
         for(int j = 0; j < cnt;j++){
-            if(a[i] == unikal[j][0]){
-                unikal[j][1]++;
+            if(a[i] == unikal[j]){
+                shetchiki[j]++;
             }
         }
     }
     int max =-123123;
     for(int j = 0; j < cnt;j++){
-        if(unikal[j][1] > max){
-            max = unikal[j][1]; 
+        if(shetchiki[j] > max){
+            max = shetchiki[j]; 
         }
     }
     // cout << max << "\n";
 
     for(int i = cnt - 1;i >= 0;i--){
-        if(max == unikal[i][1]){
-            cout << unikal[i][0] << " ";
+        if(max == shetchiki[i]){
+            cout << unikal[i] << " ";
         }
     }
     cout << endl;

@@ -7,9 +7,9 @@ int main(){
     int n , m;
     cin>>n >> m;
     int a[n][m];
-    for(int i=0,j = 0;i<n*m;i++,j++){
+    for(int i=0;i<n*m;i++){
         a[i][j] = i*j;
-
+        if() 
     }
 
     for(int i = 0;i < n;i++){
