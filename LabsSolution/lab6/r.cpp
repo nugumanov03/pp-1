@@ -5,8 +5,8 @@ using namespace std;
 
 char toUpp(char n){
     int num = n;
-    if(num <= 92){
-        num += 'a'-'A';
+    if(num >= 92){
+        num -=32;
     }
     return (char)num;
 

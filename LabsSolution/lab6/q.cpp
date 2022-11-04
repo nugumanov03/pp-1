@@ -3,16 +3,16 @@
 
 using namespace std;
 
-int get_percent(int n, int m){
-    int pers = n/m *100;
+float get_percent(float n, float m){
+    float pers = m/n * 100;
     return pers;
 }
 
 int main(){
-    int n ,m;
+    float n ,m;
     // cout << "enter num: ";
     cin >> n >> m;
 
-    cout << pers(n,m);
+    cout << get_percent(n,m);
     return 0;
 }
