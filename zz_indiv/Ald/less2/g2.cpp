@@ -21,7 +21,7 @@ int main(){
     int maxi =-1;
     for(int i = 0;i < 10;i++){
         maxi = max(maxi,was[i]);
-        cout << was[i] << " " << i<< "\n";
+        cout << was[i] << " "; //<< i<< "\n";
     }
     // найти максимум чтобы потом сравнивать
     bool flag = true;
