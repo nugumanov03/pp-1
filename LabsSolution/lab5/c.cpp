@@ -7,7 +7,7 @@ int main(){
     string s , t;
     cin >> s >> t;
     int cnt = 0;
-    bool boolka = false;
+    // bool boolka = false;
     for(int i = 0; i < s.size();i++){
         for( int j = 0 ; j < t.size();j++ ){
             if(cnt == t.size()){
@@ -18,7 +18,6 @@ int main(){
             }else{
                 cnt = 0;
             }
-            
         }
         if(cnt == t.size()){
                 break;
