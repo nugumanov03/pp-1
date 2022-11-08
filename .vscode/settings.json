@@ -5,6 +5,7 @@
         "iosfwd": "cpp",
         "ostream": "cpp",
         "cmath": "cpp",
-        "xstring": "cpp"
+        "xstring": "cpp",
+        "xutility": "cpp"
     }
 }
