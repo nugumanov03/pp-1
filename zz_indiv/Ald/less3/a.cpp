@@ -3,7 +3,7 @@
 using namespace std;
 
 int summ(int a, int b){
-    // a = 8 ; b = 5
+    // a = 8 ; b = 7
     a+=5;
     // 13
     return a - b;
@@ -12,8 +12,10 @@ int summ(int a, int b){
 int main(){
     int a,b;
     cin >> a >> b; // 5 8
+    // a : 5
+    a+=2;
     cout << summ( b, a);
-    
+
     cout << a;
     // summ(5 , 8) = 13
 

@@ -22,5 +22,6 @@ int main(){
     string s;
     getline(cin,s);
     cout <<change(s);
+    
     return 0;
 }

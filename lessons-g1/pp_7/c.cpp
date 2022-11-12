@@ -31,7 +31,7 @@ int main(){
     int n = 5;
     cout << endl <<recu(n) << endl;
     cout << fac(n);
-    int a =6
+    int a =6;
     cout <<  sum( &a ,5);
     // a =6 ;
     return 0;

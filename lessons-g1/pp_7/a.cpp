@@ -8,8 +8,8 @@ float hypo(int a, int b){
     return sqrt(x*x + y*y);
 
 }
-void greet(int a){
-    cout << "Hello! " << a << endl;
+void greet(){
+    cout << "Hello! " << endl;
     return;
 }
 int main(){
@@ -33,7 +33,7 @@ int main(){
     cout << hypo(a , b) << endl;
     cout << hypo(c,k) << endl;
     cout << endl;
-    greet(b);
+    greet();
     // f(x , y) = sqrt(x*x + y*y); g() = 15
     // cout << g() -> 15
     // for x = 5 -> f(x) = 10

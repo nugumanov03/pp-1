@@ -28,12 +28,14 @@ int max(int a,int b){
 }
 int main(){
     int n;
+    cin >> n;
     int a[n];
     for(int i = 0;i < n;i++){
         cin >> a[i];
     }
     // ai    
     cout << sum_of_primes(n , a);
+    
     // cout << sum_of_primes(m , b);
 
     return 0;
