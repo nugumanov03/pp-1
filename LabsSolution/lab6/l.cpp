@@ -7,7 +7,7 @@ bool check(string s,int x){
     int max = -123;
     for(int i = 0; i < s.size();i++){
         
-        if( (int)s[i] > max && (s[i] <= '9' && s[i] >= '0')){
+        if(s[i] <= '9' && s[i] >= '0'){
             cnt++;
             if(cnt >= x){
                 return true;
