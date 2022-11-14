@@ -2,6 +2,14 @@
 
 using namespace std;
 
+findbin(){
+    if(){
+        return 
+    }else{
+        return 
+    }
+}
+
 int main(){
     int n;
     cin >> n;
