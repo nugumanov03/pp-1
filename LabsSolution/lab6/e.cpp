@@ -10,7 +10,7 @@ float hypo(int a,int b){
 int main(){
     int a , b;
     cin >> a >> b;
-    cout << setprecision(4)<< hypo(a ,b);
+    cout << setprecision(4)<< hypo(a ,b); // fixed 
     
 
     return 0;

@@ -7,7 +7,7 @@ int main(){
     int x;
     int ox = 0,oy = 0;
     while(cin >> s){
-    cin >> x;
+        cin >> x;
         if(s == "North"){
             oy+=x;
         }else if(s == "South"){
