@@ -23,18 +23,16 @@ int main(){
         }
     }
     bool boolka2 = true;
+        if(cnt != 3){
+            boolka = false;
+        }
     // cout << cnt << endl;
     for(int i = 0;i<4;i++){
         if(nums[i].size() > 3 || nums[i].size() == 0){
             boolka = false;
         }
-        if(cnt != 3){
-            boolka = false;
-        }
-        int num_sum = 0;
-        if(nums[i].size() == 3){ 
-            // "234" -> 234
-            num_sum+= 100 *((int)nums[i][0] - 48) + 10*( (int)nums[i][1] - 48) + (int)nums[i][2] - 48;
+        if(nums[i].size() == 3){
+            int num_sum = 100 *((int)nums[i][0] - 48) + 10*( (int)nums[i][1] - 48) + (int)nums[i][2] - 48;
             if(num_sum > 255){
                 boolka = false;
             }
@@ -45,10 +43,7 @@ int main(){
                 boolka2 = false;
             }
         }
-        // cout << num_sum << " "; 
-        if(num_sum > 255){
-            boolka = false;
-        }
+        // cout << num_sum << " ";
         if(!boolka2){
             boolka = false;
         }

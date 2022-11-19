@@ -6,7 +6,7 @@ int main(){
     string s;
     int x;
     int ox = 0,oy = 0;
-    while(cin >> s){
+    while(cin >> s){    
         cin >> x;
         if(s == "North"){
             oy+=x;
