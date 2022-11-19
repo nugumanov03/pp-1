@@ -12,6 +12,9 @@ int main(){
             s2+=s[i];
         }
     }
+    // s = " aa bb aac"
+    // s2 = "aabbaac"
+    // s3= "caabbaa"
     string s3 = s2;
     reverse(s3.begin() , s3.end());
     if(s3 == s2){

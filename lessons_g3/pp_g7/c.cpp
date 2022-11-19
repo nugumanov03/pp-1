@@ -17,9 +17,8 @@ bool check(int n){
 int main(){
     int n;
     cin >> n;
-    if( check(n) == true){
-        cout << "Yes";
-    }else cout<< "No";
+    if( check(n) == true){cout << "YES";
+    }else cout<< "NO";
     // cout << check(n);
     return 0;
 }
