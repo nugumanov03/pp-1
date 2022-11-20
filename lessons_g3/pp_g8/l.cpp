@@ -14,7 +14,7 @@ int main(){
         s.insert(k);
     }
     cout << s.size() << endl;
-    for(auto it = s.begin();it < s.end(); it++){
+    for(auto it = s.begin();it != s.end(); it++){
         cout << *it << " ";
     }
 
