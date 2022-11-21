@@ -9,15 +9,15 @@ double GetPriceQualityRatio(int price,int quality){
 int main(){
     int n;
     cin >> n;
-    int qual[n];
+    double qual[n];
     string str[n];
     for(int i = 0; i < n;i++){
         cin >> str[i];
-        int x;
-        cin >> x;
-        int n;
-        cin >> n;
-        qual[i] = GetPriceQualityRatio(x , n);
+        int price;
+        cin >> price;
+        int quality;
+        cin >> quality;
+        qual[i] = GetPriceQualityRatio(price, quality);
     }
     int min = qual[0];
     for(int i = 1; i < n;i++){

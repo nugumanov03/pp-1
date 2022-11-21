@@ -10,6 +10,7 @@ int main(){
     char x;
     cin >> x;
     // ai
+    string st ="";
     for(int i = 0;i < s.size();i++){
         bool flag = false;
         for(int j = 0;j < t.size();j++){
@@ -19,8 +20,12 @@ int main(){
             }
         }
         if(flag){
+            st+=x;
            cout << x;
-        }else cout << s[i];
+        }else {
+            st+= s[i];
+            cout << s[i];
+        }
     }
     // cout << s;
 
