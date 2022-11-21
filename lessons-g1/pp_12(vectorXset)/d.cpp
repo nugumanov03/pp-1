@@ -17,7 +17,7 @@ int main(){
     // 
     int k , a;
     cin >> k >> a;
-    vt.insert(vt.begin() + k , a);
+    vt.insert(vt.begin() + k , a);  
     // vt.erase(vt.begin() + k , vt.begin() + x + 1);
     for(int i = 0;i < vt.size();i++){
         cout << vt[i] << " ";

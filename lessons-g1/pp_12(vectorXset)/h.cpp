@@ -16,8 +16,8 @@ int main(){
         int min = 123, pos;
         for(int i = 0; i < vt.size();i++){
             if(min > vt[i]){
-            min = vt[i];
-            pos = i;
+                min = vt[i];
+                pos = i;
             }
         }
         cout << min << " ";
