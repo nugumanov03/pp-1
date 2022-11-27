@@ -2,18 +2,22 @@
 #include<vector>
 #include<algorithm>
 #include<map>
+#include<set>
 
 
 using namespace std;
 
 int main(){
     // set <pair < int , string > > ss;
-    map <int , int > mp;    
-    mp[0] = 5;
-    mp[1] = 5;
-    mp[2] = 5;
-    mp[3] = 5;
-    mp[4] = 5;
-    cout << mp[7] << mp[8] << mp[9]   ;
+    map <string, int > mp;    
+    set <int> st;
+    mp.at("abc"); // = mp[abc]
+    if( st.empty()){
+        // qwjd
+    }
+    st.empty() // true | false
+
+
+
     return 0;
 }

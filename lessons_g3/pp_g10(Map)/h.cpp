@@ -8,13 +8,15 @@ using namespace std;
 int main(){
     int n;
     cin >> n;
-    vector <int > vt(n);
+    vector <int > vt;
     set <int> ss;
 
     for(int i = 0;i < n;i++){
-        cin >> vt[i];
+        int k;
+        cin >> k;
+        vt.push_back(k);
     }   
-    sort(vt.begin() , vt.end());
+    // sort(vt.begin() , vt.end());
     int cnt = 0;
     for(int i = 0;i < vt.size();i++){
         for(int j = i+1 ; j < vt.size();j++){

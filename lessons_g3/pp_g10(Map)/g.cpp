@@ -28,7 +28,7 @@ int main(){
     cout << toNum(toBinary(101)) << "\t";
     cout << toNum(toBinary(11)) << "\n";
     cout << toBinary((toNum(toBinary(101)) | toNum(toBinary(11) ))) << endl;
-    cout << (toNum(toBinary(101)) | toNum(toBinary(11) ));
+    cout << (toNum(toBinary(101)) |n toNum(toBinary(11) ));
     // cout << ( a & b);
 
     return 0;

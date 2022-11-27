@@ -5,6 +5,9 @@ using namespace std;
 int main(){
     string s;
     cin >> s;
+    // ({(){}})
+    // ( { ) } 
+    // ( ( ( ( { { } } ) ) ) )
     stack <char> st;
     for(int i = 0; i < s.size() ; i++){
         if(st.empty()){
@@ -19,10 +22,14 @@ int main(){
 
     if(st.empty()) cout << "YES";
     else cout << "NO";
-    // while(!st.empty()){
-    //     cout << st.top();
-    //     st.pop();
-    // }
-
+    string str = "";
+    while(!st.empty()){
+        str+=st.top();
+        // cout << st.top();
+        st.pop();
+    }
+    reverse(str.begin() , str.end());
+    cout << str; 
+    cout << "Yerke TOP";
     return 0;
 }
