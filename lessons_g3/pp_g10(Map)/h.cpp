@@ -18,7 +18,7 @@ int main(){
             // pair<int , int> pr;
             // pr.first = ( vt[i] ^ vt[j] ); 
             // pr.second = i+1;
-            if( ( vt[i] ^ vt[j] )  < 4){
+            if( ( vt[i] ^ vt[j] )  <= n){
                 cnt++;
             }
         }
