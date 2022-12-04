@@ -19,7 +19,6 @@ int main(){
         }
     }
     cout << ans << " " << max + 1;
-
-
+    
     return 0;
 }
