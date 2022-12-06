@@ -33,7 +33,7 @@ int main(){
         mp[it->first]=(it->second * 100)/sum;
         vt.push_back( make_pair(it->first , it->second));
     }
-    sort(vt.begin() , vt.end() , comp);
+   git  sort(vt.begin() , vt.end() , comp);
     for(int i = 0; i< vt.size();i++){
         cout << vt[i].first << " " << vt[i].second<< "%\n";
     }
