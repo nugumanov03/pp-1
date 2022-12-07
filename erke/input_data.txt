@@ -1,0 +1,21 @@
+input:
+({([])}){[()]}
+outpus: YES
+
+input:
+)()
+output: NO
+
+input:
+()(
+output: NO
+
+input:
+({)}
+output: NO
+
+intput:
+()[]{}
+output: YES
+
+{} () []
